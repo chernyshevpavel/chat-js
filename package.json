@@ -1,0 +1,22 @@
+{
+  "name": "chat-js",
+  "version": "1.0.0",
+  "description": "chat-js based on reack.js technologie",
+  "main": "/server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chernyshevpavel/chat-js.git"
+  },
+  "author": "Pavel Chernyshev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chernyshevpavel/chat-js/issues"
+  },
+  "homepage": "https://github.com/chernyshevpavel/chat-js#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
