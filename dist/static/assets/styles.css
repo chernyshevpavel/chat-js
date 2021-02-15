@@ -1,0 +1,112 @@
+.content_center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    width: 340px;
+    background-color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+    padding: 16px 0 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup__size_s {
+    height: 460px;
+}
+
+.popup__size_xl {
+    height: 615px;
+}
+
+.popup__title {
+    color: #1E1E1E;
+    display: block;
+    margin: 34px 0 34px 0;
+    font-family: Inter, monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.popup__input_group {
+    width: 280px;
+    padding: 5px 0 5px 0;
+}
+
+.popup__input__title {
+    color: #999999;
+    font-family: Inter, monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+}
+
+.popup__input {
+    width: 280px;
+    outline: none;
+    padding: 0;
+    border: none;
+    margin: 8px 0 7px 0;
+}
+
+.popup__input_line {
+    width: 280px;
+    border-bottom: 1px solid #3369F3;
+}
+
+.popup__input_wrong {
+    font-family: Inter, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 8px;
+    color: #FF2F2F;
+}
+
+.popup__btn {
+    width: 280px;
+    height: 37px;
+    background: #3369F3;
+    border-radius: 8px;
+    border: none;
+}
+
+.popup__btn__text {
+    font-family: Inter, monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.popup__link {
+    font-family: Inter, monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    color: #3369F3;
+    text-decoration: none;
+    margin: 14px 0 14px 0;
+}
+
+.popup__input__title_hidden {
+    visibility: hidden;
+}
+
+.flex_vertical_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
