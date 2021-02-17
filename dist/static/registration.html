@@ -11,57 +11,64 @@
 
     <form action="">
         <div class="popup popup__size_xl">
-            <div class="popup__input_fields flex_center">
+            <div class="popup__input_fields flex_column_align_center">
                 <span class="popup__title">Registration</span>
                 <div class="popup__input_group">
                     <span class="popup__input__title popup__input__title_hidden">E-Mail</span>
-                    <input class="popup__input" type="email" placeholder="E-Mail">
+                    <input class="popup__input" name="email" type="email" placeholder="E-Mail">
                     <div class="popup__input_line"></div>
                     <span class="popup__input_wrong"></span>
                 </div>
                 <div class="popup__input_group">
                     <span class="popup__input__title popup__input__title_hidden">Login</span>
-                    <input class="popup__input" type="text" placeholder="Login">
+                    <input class="popup__input" name="login" type="text" placeholder="Login">
                     <div class="popup__input_line"></div>
                     <span class="popup__input_wrong"></span>
                 </div>
                 <div class="popup__input_group">
                     <span class="popup__input__title popup__input__title_hidden">Name</span>
-                    <input class="popup__input" type="text" placeholder="Name">
+                    <input class="popup__input" name="name" type="text" placeholder="Name">
                     <div class="popup__input_line"></div>
                     <span class="popup__input_wrong"></span>
                 </div>
                 <div class="popup__input_group">
                     <span class="popup__input__title popup__input__title_hidden">Surname</span>
-                    <input class="popup__input" type="text" placeholder="Surname">
+                    <input class="popup__input" name="surname" type="text" placeholder="Surname">
                     <div class="popup__input_line"></div>
                     <span class="popup__input_wrong"></span>
                 </div>
                 <div class="popup__input_group">
                     <span class="popup__input__title popup__input__title_hidden">Phone</span>
-                    <input class="popup__input" type="tel" placeholder="+7 (999) 999 99 99">
+                    <input class="popup__input" name="phone" type="tel" placeholder="+7 (999) 999 99 99">
                     <div class="popup__input_line"></div>
                     <span class="popup__input_wrong"></span>
                 </div>
                 <div class="popup__input_group">
                     <span class="popup__input__title popup__input__title_hidden">Password</span>
-                    <input class="popup__input" type="password" placeholder="Password">
+                    <input class="popup__input" name="password" type="password" placeholder="Password">
                     <div class="popup__input_line"></div>
                     <span class="popup__input_wrong"></span>
                 </div>
                 <div class="popup__input_group">
                     <span class="popup__input__title popup__input__title_hidden">Password confirm</span>
-                    <input class="popup__input" type="password" placeholder="Password confirm">
+                    <input class="popup__input" name="confirm_password" type="password" placeholder="Password confirm">
                     <div class="popup__input_line"></div>
                     <span class="popup__input_wrong"></span>
                 </div>
             </div>
-            <div class="popup__actions flex_center">
+            <div class="popup__actions flex_column_align_center">
                 <button class="popup__btn" type="button"><span class="popup__btn__text">Registrate</span></button>
                 <a class="popup__link popup__flex_item" href="auth.html">Authorization</a>
             </div>
         </div>
     </form>
 </main>
+<script src="scripts/getFormData.js"></script>
+<script>
+    "use strict";
+    (function () {
+        getFormData('popup', 'popup__btn', console.log);
+    })();
+</script>
 </body>
 </html>

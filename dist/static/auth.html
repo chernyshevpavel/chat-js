@@ -11,27 +11,34 @@
 
         <form action="">
             <div class="popup popup__size_s">
-                <div class="popup__input_fields flex_center">
+                <div class="popup__input_fields flex_column_align_center">
                     <span class="popup__title">Authorization</span>
                     <div class="popup__input_group">
                         <span class="popup__input__title popup__input__title_hidden">Login</span>
-                        <input class="popup__input" type="text" placeholder="Login">
+                        <input class="popup__input" type="text" name="login" placeholder="Login">
                         <div class="popup__input_line"></div>
                         <span class="popup__input_wrong"></span>
                     </div>
                     <div class="popup__input_group">
                         <span class="popup__input__title popup__input__title_hidden">Password</span>
-                        <input class="popup__input" type="password" placeholder="Password">
+                        <input class="popup__input" type="password" name="password" placeholder="Password">
                         <div class="popup__input_line"></div>
                         <span class="popup__input_wrong"></span>
                     </div>
                 </div>
-                <div class="popup__actions flex_center">
+                <div class="popup__actions flex_column_align_center">
                     <button class="popup__btn" type="button"><span class="popup__btn__text">Authorize</span></button>
                     <a class="popup__link popup__flex_item" href="registration.html">Do not have an accaunt?</a>
                 </div>
             </div>
         </form>
     </main>
+    <script src="scripts/getFormData.js"></script>
+    <script>
+        "use strict";
+        (function () {
+            getFormData('popup', 'popup__btn', console.log);
+        })();
+    </script>
 </body>
 </html>
