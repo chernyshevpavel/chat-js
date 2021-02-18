@@ -32,7 +32,6 @@ function getFormData(containerClass, btnClass, callback) {
                 let value = inputList[i].value;
                 res[name] = value;
             }
-            containerFirst.getElementsByTagName('input')
             callback(res);
         }
     };
